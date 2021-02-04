@@ -1,5 +1,9 @@
 ### pwa-start-example
 
+#### App Manifest
+* Support: https://caniuse.com/web-app-manifest
+
+
 ### Thmen:
 * Moderne Browser Technologien
  * Responsive Web Design
