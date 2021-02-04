@@ -1,0 +1,22 @@
+{
+  "name": "pwa-start-example",
+  "version": "1.0.0",
+  "description": "PWA example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloworld121/pwa-start-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloworld121/pwa-start-example/issues"
+  },
+  "homepage": "https://github.com/helloworld121/pwa-start-example#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
