@@ -1,3 +1,6 @@
+// ENABLE:
+// ServiceWorker only work on HTTPS!!! except for localhost
+
 // SCOPE:
 // the FOLDER where the ServiceWorker is added, defines its scope
 // the SCOPE defines the files for which the ServiceWorker is applied
@@ -12,5 +15,13 @@
 
 
 // IMPLEMENTATION:
+// "self" gives access to the ServiceWorker itself
+// we don't have access to the DOM in the ServiceWorker
+self.addEventListener('install', function(event){
+    console.log('[Service Worker] Installing ServiceWorker...', event);
+});
 
-
+self.addEventListener('activate', function(event){
+    console.log('[Service Worker] Activating ServiceWorker...', event);
+    return self.clients.claim(); // this line is necessary right now
+});

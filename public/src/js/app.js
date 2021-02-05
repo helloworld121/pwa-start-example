@@ -4,6 +4,7 @@ if('serviceWorker' in navigator) { // navigator is the browser ;) => "in" checks
     // register file as a service-worker
     navigator.serviceWorker
         .register('/sw.js')
+        // .register('/sw.js', {scope: '/help/'}) // it is possible to restrict the scope of a ServiceWorker
         // register returns a Promise, which might take some time to finish
         .then(function() {
             console.log('ServiceWorker registered!')
